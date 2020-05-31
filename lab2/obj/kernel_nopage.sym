@@ -1,8 +1,7 @@
 00100000 .text
 001068e0 .rodata
 00107d88 .stab
-00114d91 .stabstr
-001179e0 .note.gnu.property
+00114ee1 .stabstr
 00118000 .data
 0011b000 .data.pgdir
 0011d000 .bss
@@ -117,6 +116,7 @@
 0010521d default_nr_free_pages
 00105227 basic_check
 00105764 default_check
+00000000 buddy_pmm.c
 00000000 string.c
 00000000 printfmt.c
 00107bf0 error_string
@@ -124,6 +124,8 @@
 0010635e getuint
 001063ad getint
 001067fc sprintputch
+00000000 
+0011d000 _GLOBAL_OFFSET_TABLE_
 00102c24 vector242
 0010267b vector119
 00100929 print_kerninfo
@@ -219,7 +221,7 @@
 00102c0c vector240
 00102432 vector54
 001022f7 vector19
-00114d90 __STAB_END__
+00114ee0 __STAB_END__
 00102588 vector92
 00102c3c vector244
 00102ed1 load_esp0
@@ -233,7 +235,7 @@
 001028ac vector168
 00102387 vector35
 00102645 vector113
-00114d91 __STABSTR_BEGIN__
+00114ee1 __STABSTR_BEGIN__
 001026b1 vector125
 001003e6 __panic
 00102aec vector216
@@ -376,7 +378,7 @@
 00102246 trap
 00102930 vector179
 0010237e vector34
-001179de __STABSTR_END__
+00117b42 __STABSTR_END__
 001023ea vector46
 00105e82 strcmp
 00102714 vector134

@@ -1,5 +1,5 @@
 
-bin/kernel：     文件格式 elf32-i386
+bin/kernel:     file format elf32-i386
 
 
 Disassembly of section .text:
@@ -893,11 +893,11 @@ c010063c:	c7 40 14 00 00 00 00 	movl   $0x0,0x14(%eax)
     stabs = __STAB_BEGIN__;
 c0100643:	c7 45 f4 88 7d 10 c0 	movl   $0xc0107d88,-0xc(%ebp)
     stab_end = __STAB_END__;
-c010064a:	c7 45 f0 90 4d 11 c0 	movl   $0xc0114d90,-0x10(%ebp)
+c010064a:	c7 45 f0 e0 4e 11 c0 	movl   $0xc0114ee0,-0x10(%ebp)
     stabstr = __STABSTR_BEGIN__;
-c0100651:	c7 45 ec 91 4d 11 c0 	movl   $0xc0114d91,-0x14(%ebp)
+c0100651:	c7 45 ec e1 4e 11 c0 	movl   $0xc0114ee1,-0x14(%ebp)
     stabstr_end = __STABSTR_END__;
-c0100658:	c7 45 e8 de 79 11 c0 	movl   $0xc01179de,-0x18(%ebp)
+c0100658:	c7 45 e8 42 7b 11 c0 	movl   $0xc0117b42,-0x18(%ebp)
 
     // String table validity checks
     if (stabstr_end <= stabstr || stabstr_end[-1] != 0) {

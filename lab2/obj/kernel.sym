@@ -1,8 +1,7 @@
 c0100000 .text
 c01068e0 .rodata
 c0107d88 .stab
-c0114d91 .stabstr
-c01179e0 .note.gnu.property
+c0114ee1 .stabstr
 c0118000 .data
 c011b000 .data.pgdir
 c011d000 .bss
@@ -117,6 +116,7 @@ c0104cc4 default_free_pages
 c010521d default_nr_free_pages
 c0105227 basic_check
 c0105764 default_check
+00000000 buddy_pmm.c
 00000000 string.c
 00000000 printfmt.c
 c0107bf0 error_string
@@ -124,6 +124,8 @@ c010625e printnum
 c010635e getuint
 c01063ad getint
 c01067fc sprintputch
+00000000 
+c011aa38 _GLOBAL_OFFSET_TABLE_
 c0102c24 vector242
 c010267b vector119
 c0100929 print_kerninfo
@@ -219,7 +221,7 @@ c011df30 pmm_manager
 c0102c0c vector240
 c0102432 vector54
 c01022f7 vector19
-c0114d90 __STAB_END__
+c0114ee0 __STAB_END__
 c0102588 vector92
 c0102c3c vector244
 c0102ed1 load_esp0
@@ -233,7 +235,7 @@ c01023ab vector39
 c01028ac vector168
 c0102387 vector35
 c0102645 vector113
-c0114d91 __STABSTR_BEGIN__
+c0114ee1 __STABSTR_BEGIN__
 c01026b1 vector125
 c01003e6 __panic
 c0102aec vector216
@@ -376,7 +378,7 @@ c0102564 vector88
 c0102246 trap
 c0102930 vector179
 c010237e vector34
-c01179de __STABSTR_END__
+c0117b42 __STABSTR_END__
 c01023ea vector46
 c0105e82 strcmp
 c0102714 vector134

@@ -1,3 +1,4 @@
+#include "buddy_pmm.h"
 #include <assert.h>
 #include <defs.h>
 #include <x86.h>
@@ -222,8 +223,10 @@ page_init(void) {
         SetPageReserved(pages + i);
     }
 
+	/* 在buddy system中，freemem应当是所有allocater之后（高地址）出的地址。 */
     uintptr_t freemem = PADDR((uintptr_t)pages + sizeof(struct Page) * npage);
-
+	/* 预留4M空间给buddy_allocator_indicator和buddy_allocator */
+	// freemem += 4 * 1024 * 1024;
     for (i = 0; i < memmap->nr_map; i ++) {
         uint64_t begin = memmap->map[i].addr, end = begin + memmap->map[i].size;
         if (memmap->map[i].type == E820_ARM) {

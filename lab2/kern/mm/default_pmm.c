@@ -1,3 +1,4 @@
+#include "buddy_pmm.h"
 #include "memlayout.h"
 #include <pmm.h>
 #include <list.h>
@@ -95,7 +96,6 @@
  *  change some pages' `p->property` correctly.
  */
 free_area_t free_area;
-
 #define free_list (free_area.free_list)
 #define nr_free (free_area.nr_free)
 

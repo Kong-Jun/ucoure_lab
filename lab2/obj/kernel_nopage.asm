@@ -1,5 +1,5 @@
 
-bin/kernel_nopage：     文件格式 elf32-i386
+bin/kernel_nopage:     file format elf32-i386
 
 
 Disassembly of section .text:
@@ -893,11 +893,11 @@ debuginfo_eip(uintptr_t addr, struct eipdebuginfo *info) {
     stabs = __STAB_BEGIN__;
   100643:	c7 45 f4 88 7d 10 00 	movl   $0x107d88,-0xc(%ebp)
     stab_end = __STAB_END__;
-  10064a:	c7 45 f0 90 4d 11 00 	movl   $0x114d90,-0x10(%ebp)
+  10064a:	c7 45 f0 e0 4e 11 00 	movl   $0x114ee0,-0x10(%ebp)
     stabstr = __STABSTR_BEGIN__;
-  100651:	c7 45 ec 91 4d 11 00 	movl   $0x114d91,-0x14(%ebp)
+  100651:	c7 45 ec e1 4e 11 00 	movl   $0x114ee1,-0x14(%ebp)
     stabstr_end = __STABSTR_END__;
-  100658:	c7 45 e8 de 79 11 00 	movl   $0x1179de,-0x18(%ebp)
+  100658:	c7 45 e8 42 7b 11 00 	movl   $0x117b42,-0x18(%ebp)
 
     // String table validity checks
     if (stabstr_end <= stabstr || stabstr_end[-1] != 0) {
